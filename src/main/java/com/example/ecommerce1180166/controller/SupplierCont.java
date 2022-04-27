@@ -15,13 +15,8 @@ public class SupplierCont {
     @Autowired
     SupplierServiceImpl supplierService;
 
-    @PutMapping("/Update")
-    public Supplier updateUser(@RequestBody SupplierDto supplierDto) {
-        Supplier supplier = new Supplier();
-        supplier.setName(supplierDto.getName());
-        supplier.setEmail(supplierDto.getEmail());
-
-        supplier.setId(supplierDto.getId());
+    @PutMapping("/update")
+    public Supplier updateUser(@RequestBody Supplier supplier) {
 
         return supplierService.updateSupplier(supplier,supplier.getId());
 

@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "dd34b2e2-e99f-4fae-88c1-e65ee5cc725a",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Registering Customer",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "get Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/getProducts",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"getProducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Supplier",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "UpdateSupplier",
+					"host": [
+						"UpdateSupplier"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

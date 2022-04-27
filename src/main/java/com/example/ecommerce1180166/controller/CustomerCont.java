@@ -20,15 +20,9 @@ public class CustomerCont {
     CustomerServiceImpl customerService;
 
 
-    @PostMapping(path = "/registerClient")
-    public ResponseEntity<String> registerClient(@RequestBody CustomerDto customerDto) {
+    @PostMapping(path = "/registerCustomer")
+    public ResponseEntity<String> registerCustomer(@RequestBody Customer customer) {
         System.out.println("reached1");
-        Customer customer = new Customer();
-
-
-        customer.setEmail(customerDto.getEmail());
-        customer.setName(customerDto.getName());
-        customer.setId(customerDto.getId());
 
 
         customerService.createCustomer(customer);
